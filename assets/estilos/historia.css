@@ -1,0 +1,56 @@
+/* SECCION CONTENIDO HISTORIA */
+.main_historia{
+    background-color: #181D31;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 100px;
+    
+}
+
+.contenido_historia{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 400px); 
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    grid-template-areas: 'tit1 tit1 tex1 tex1'
+                         'tex2 tex2 tit2 tit2'
+                         'tit3 tex3 tex3 tex3';
+}
+
+#titulo1{
+    grid-area: tit1;
+}
+#titulo2{
+    grid-area: tit2;
+}
+#titulo3{
+    grid-area: tit3;
+}
+#texto1{
+    grid-area: tex1;
+}
+#texto2{
+    grid-area: tex2;
+}
+#texto3{
+    grid-area: tex3;
+}
+
+.texto_historia{
+    color: #E6DDC4;
+}
+
+/* CAJA VIDEO */
+
+.contenedor_video{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

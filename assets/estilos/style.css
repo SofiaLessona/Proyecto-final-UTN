@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter&display=swap);
+
+*{
+    font-family: Montserrat, sans-serif;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* SECCION BARRA DE NAVEGACION */
+
+nav{
+    height: 85px;
+    background-color: #181D31;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boton_index{
+    background-color: #678983;
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 25px;
+    margin-right: 80px;
+}
+
+li{
+    height: 35px;
+    background-color: #E6DDC4;
+    border-radius: 10px;
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 2px 3px #678983;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+li:active{
+    box-shadow: 0 0;
+}
+
+header {
+    height: 65vh;
+    width: 100vw;
+    background-image: url(../imagenes/codigo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #eeeeee;
+}
+
+h1{
+    font-size: 3.5rem;
+    text-align: center;
+    text-shadow: 2px 2px grey, 6px 6px black;
+}
+
+/* SECCION MAIN GENERAL */
+
+h2{
+    color: #678983;
+    font-size: 2.5rem;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 2px 3px black;
+}
+
+/* SECCION FOOTER */
+
+footer{
+    background-color: #678983;
+    color: #181D31;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 40px;
+}
+
+.logo_footer{
+    height: 80px;
+}
+
+.logo_titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    height: 60px;
+}
+
+h3{
+    font-size: 15px;
+    text-align: center;
+}
