@@ -12,10 +12,11 @@
 }
 
 .contenido_historia{
-    width: 100vw;
+    width: 90vw;
+    height: 700px;
     display: grid;
-    grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(3, 400px); 
+    /*grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 400px); */
     align-items: center;
     justify-content: center;
     column-gap: 40px;
