@@ -10,11 +10,18 @@
     <title>Juguemos</title>
 </head>
 <body>
-    <nav>
-        <a class="boton_index" href="../../index.html"></a>
+    <nav class="flex_style">
+        <a class="boton_index" href="../../index.html">
+            <svg width="200px" height="80px">
+                <rect x="45" y="5" width="60px" height="35px" id="compu1" rx="5" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50px" height="25px" id="compu2" rx="5" fill="#495579"></rect>
+                <polygon points="55 45, 95 45, 115 62, 30 62" id="compu1" fill="#F0E9D2"></polygon>
+                <polygon points="57 48, 92 48, 104 58, 43 58" id="compu2" fill="#495579"></polygon>
+            </svg>
+        </a>
         <ul>
-            <li><a href="./historia.html">HISTORIA</a></li>
-            <li><a href="./juguemos.html">JUGUEMOS</a></li>
+            <li class="estilo-boton"><a href="./historia.html">HISTORIA</a></li>
+            <li class="estilo-boton"><a href="./juguemos.html">JUGUEMOS</a></li>
         </ul>
     </nav>
 
@@ -24,29 +31,41 @@
 
     <main class="main_juguemos">
         <h2>Armemos el rompecabezas y veamos qué imagen es...</h2>
-        <div>
-            <p>Arrastre y suelte la imagen aquí</p>
-        </div>
-        <div>
-            <p>Arrastre y suelte la imagen aquí</p>
-        </div>
-        <div>
-            <p>Arrastre y suelte la imagen aquí</p>
-        </div>
-        <img src="" alt="Imagen de rompecabezas">
-        <img src="" alt="Imagen de rompecabezas">
-        <img src="" alt="Imagen de rompecabezas">
 
-        <button>Reiniciar</button>
+        <div class="contenedor-juego">
+            
+            <div class="estilo-contenedor paneles">
+                <div class="panel-vacio" ondragover="prevenirDefault(event)" ondrop="soltarImagen(event)">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div class="panel-vacio" ondragover="prevenirDefault(event)" ondrop="soltarImagen(event)">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div class="panel-vacio" ondragover="prevenirDefault(event)" ondrop="soltarImagen(event)">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+            </div>
+
+            <div class="estilo-contenedor imagenes">
+                <img class="imagen-juego" ondragstart="arrastrarImagen(event)" src="../imagenes/rompe2.png" alt="Imagen de rompecabezas">
+                <img class="imagen-juego" ondragstart="arrastrarImagen(event)" src="../imagenes/rompe1.png" alt="Imagen de rompecabezas">
+                <img class="imagen-juego" ondragstart="arrastrarImagen(event)" src="../imagenes/rompe3.png" alt="Imagen de rompecabezas">
+            </div>
+
+            <button class="boton-reinicio" onclick="reinicio(event)" >Reiniciar</button>
+        </div>
+
     </main>
 
-    <footer>
-        <div class="logo_titulo">
+    <footer class="flex_style">
+        <div class="logo_titulo flex_style">
             <img class="logo_footer" src="../imagenes/logo.png" alt="Logo">
             <h3>PROGRAMACION<br>E<br> HISTORIA</h3>
         </div>
         
         <p>Sitio con fines educativos - Creado por Sofía Lessona</p>
     </footer>
+
+    <script src="../../juego.js"></script>
 </body>
 </html>

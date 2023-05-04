@@ -10,11 +10,18 @@
     <title>Historia</title>
 </head>
 <body>
-    <nav>
-        <a class="boton_index" href="../../index.html"></a>
+    <nav class="flex_style">
+        <a class="boton_index" href="../../index.html">
+            <svg width="200px" height="80px">
+                <rect x="45" y="5" width="60px" height="35px" id="compu1" rx="5" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50px" height="25px" id="compu2" rx="5" fill="#495579"></rect>
+                <polygon points="55 45, 95 45, 115 62, 30 62" id="compu1" fill="#F0E9D2"></polygon>
+                <polygon points="57 48, 92 48, 104 58, 43 58" id="compu2" fill="#495579"></polygon>
+            </svg>
+        </a>
         <ul>
-            <li><a href="./historia.html">HISTORIA</a></li>
-            <li><a href="./juguemos.html">JUGUEMOS</a></li>
+            <li class="estilo-boton"><a href="./historia.html">HISTORIA</a></li>
+            <li class="estilo-boton"><a href="./juguemos.html">JUGUEMOS</a></li>
         </ul>
     </nav>
     
@@ -46,22 +53,25 @@
         <h2>Un breve video para complementar lo visto</h2>
 
         <section class="contenedor_video">
-            <video id="video" controls poster="../imagenes/img-video.jpg">
+            <video id="video" poster="../imagenes/img-video.jpg">
                 <source src="../video/historia-Comp.mp4" type="video/mp4"/>
                 <source src="../video/historia-Comp.ogv" type="video/ogv"/>
             </video>
 
             <div class="barra_video">
-                <button onclick="play()">Play</button>
-                <button onclick="pause()">Pausa</button>
+                <div class="botonera">
+                    <button class="estilo-boton" onclick="play()"><img src="../imagenes/play.svg" alt="Play"></button>
+                    <button class="estilo-boton" onclick="pause()"><img src="../imagenes/pausa.svg" alt="Pause"></button>
+                </div>
+                
                 <p>Duración video: <span id="duracion"></span></p>
             </div>
         </section>
     </main>
 
     <!--FOOTER-->
-    <footer>
-        <div class="logo_titulo">
+    <footer class="flex_style">
+        <div class="logo_titulo flex_style">
             <img class="logo_footer" src="../imagenes/logo.png" alt="Logo">
             <h3>PROGRAMACION<br>E<br> HISTORIA</h3>
         </div>

@@ -10,11 +10,18 @@
     <title>Proyecto final de Sofi</title>
 </head>
 <body> 
-    <nav>
-        <a class="boton_index" href="./index.html"></a>
+    <nav class="flex_style">
+        <a class="boton_index" href="./index.html">
+            <svg width="200px" height="80px">
+                <rect x="45" y="5" width="60px" height="35px" id="compu1" rx="5" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50px" height="25px" id="compu2" rx="5" fill="#495579"></rect>
+                <polygon points="55 45, 95 45, 115 62, 30 62" id="compu1" fill="#F0E9D2"></polygon>
+                <polygon points="57 48, 92 48, 104 58, 43 58" id="compu2" fill="#495579"></polygon>
+            </svg>
+        </a>
         <ul>
-            <li><a href="./assets/paginas/historia.html">HISTORIA</a></li>
-            <li><a href="./assets/paginas/juguemos.html">JUGUEMOS</a></li>
+            <li class="estilo-boton"><a href="./assets/paginas/historia.html">HISTORIA</a></li>
+            <li class="estilo-boton"><a href="./assets/paginas/juguemos.html">JUGUEMOS</a></li>
         </ul>
     </nav>
 
@@ -28,19 +35,19 @@
             <div class="tarjeta_index">
                 <img class="imagen_tarjeta" src="./assets/imagenes/img1.jpg" alt="Programadores con un procesador de IBM, años 50">
                 <p>Conozcamos un poco sobre la historia de la programación</p>
-                <a class="boton_tarjeta" href="#">Ir a Historia</a>
+                <a class="boton_tarjeta" href="./assets/paginas/historia.html">Ir a Historia</a>
             </div>
 
             <div class="tarjeta_index">
                 <img class="imagen_tarjeta" src="./assets/imagenes/img2.jpg" alt="Ilustración de una computadora">
                 <p>Juguemos un poco sobre la programación</p>
-                <a class="boton_tarjeta" href="#">Ir a Juego</a>
+                <a class="boton_tarjeta" href="./assets/paginas/juguemos.html">Ir a Juego</a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="logo_titulo">
+    <footer class="flex_style">
+        <div class="logo_titulo flex_style">
             <img class="logo_footer" src="./assets/imagenes/logo.png" alt="Logo">
             <h3>PROGRAMACION<br>E<br> HISTORIA</h3>
         </div>

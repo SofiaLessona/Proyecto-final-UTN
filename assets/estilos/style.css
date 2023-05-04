@@ -10,22 +10,48 @@ body{
     width: 100vw;
 }
 
-/* SECCION BARRA DE NAVEGACION */
-
-nav{
-    height: 85px;
-    background-color: #181D31;
+.flex_style{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+/* SECCION BARRA DE NAVEGACION */
+
+nav{
+    height: 85px;
+    background-color: #181D31;
+}
+
 .boton_index{
-    background-color: #678983;
-    width: 50px;
-    height: 50px;
-    margin-left: 60px;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+#compu1{
+    animation-name: shadow;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#compu2{    
+    animation-name: shadow;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shadow {
+    0%{
+        
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(20px);
+        transition: transform 2s;
+        opacity: 1;
+    }        
 }
 
 ul{
@@ -36,25 +62,26 @@ ul{
     margin-right: 80px;
 }
 
-li{
+.estilo-boton{
     height: 35px;
     background-color: #E6DDC4;
     border-radius: 10px;
     list-style: none;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 10px;
     box-shadow: 2px 3px #678983;
 }
 
+.estilo-boton:active{
+    margin-top: 4px;
+    box-shadow: 0 0;
+}
+
 a:link, a:visited {
     color: black;
     text-decoration: none;
-}
-
-li:active{
-    box-shadow: 0 0;
 }
 
 header {
@@ -91,9 +118,6 @@ h2{
 footer{
     background-color: #678983;
     color: #181D31;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 60px 40px;
 }
 
@@ -102,9 +126,6 @@ footer{
 }
 
 .logo_titulo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 300px;
     height: 60px;
 }

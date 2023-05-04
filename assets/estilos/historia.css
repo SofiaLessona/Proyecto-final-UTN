@@ -52,8 +52,8 @@
 
 .contenedor_video{
     background-color: black;
-    padding: 10px;;
-    width: 900px;
+    padding: 10px;
+    width: 70vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -64,9 +64,12 @@
 }
 
 .barra_video{
-    width: 100%;
+    width: 95%;
     border-radius: 10px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 button{
@@ -75,4 +78,11 @@ button{
     width: 70px;
     padding: 10px;
     border-radius: 10px;
+}
+
+.botonera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
 }
