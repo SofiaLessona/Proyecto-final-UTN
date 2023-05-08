@@ -25,31 +25,27 @@ nav{
 
 .boton_index{
     margin-left: 20px;
-    margin-top: -10px;
+    margin-top: -12px;
 }
 
 #compu1{
     animation-name: shadow;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 #compu2{    
     animation-name: shadow;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 @keyframes shadow {
-    0%{
-        
-        opacity: 0;
-    }
-
     100%{
         transform: translateY(20px);
-        transition: transform 2s;
         opacity: 1;
     }        
 }
